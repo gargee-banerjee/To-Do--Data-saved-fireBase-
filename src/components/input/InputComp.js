@@ -4,7 +4,7 @@ import { itemActions } from "../../store/items";
 import { useState } from "react";
 const InputComp = () => {
   const dispatch = useDispatch();
-  const itemId = useSelector((state) => state.items.itemList).length + 1;
+  const itemId = useSelector((state) => state.items.nextItemId);
 
   const onAddItemhandler = (event) => {
     event.preventDefault();
@@ -17,6 +17,8 @@ const InputComp = () => {
     dispatch(
       itemActions.addItem({ itemId: itemId, itemName: itemName, isDone: false })
     );
+
+    dispatch(itemActions.updateItemId());
 
     //Resetting item field
     itemNameField.value = "";

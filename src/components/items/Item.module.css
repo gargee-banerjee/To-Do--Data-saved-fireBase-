@@ -22,6 +22,7 @@
   height: 35rem;
   width: 10rem;
   position: relative;
+  border-radius: 10px;
 }
 
 .itemCard:hover {
@@ -71,12 +72,14 @@
   background: transparent;
   border: none;
   border-radius: 10px;
+  color: rgb(25, 24, 23);
 }
 
 .itemCard:hover .itemCardButtonContainer button {
   color: rgb(7, 7, 7);
   background-color: #ddf57c;
-  box-shadow: 4px 5px 6px 4px rgb(73, 74, 74) !important;
+  box-shadow: 2px 2px 5px 4px rgb(73, 74, 74);
+  /* display: block; */
 }
 
 .itemCardButtonContainer button:hover {
@@ -85,26 +88,25 @@
   font-weight: bolder !important;
 }
 
+.itemDeleteButton:active,
+.itemDoneButton:active {
+  transform: translateY(7px) !important;
+}
+
 /* .itemDoneButton:hover + .itemDeleteButton{
   background-color: aquamarine !important;
 } */
 
-.itemDeleteButton:active,
-.itemDoneButton:active {
-  box-shadow: none !important;
-  transform: translateY(7px) !important;
-}
-
+/************************Task Completed*********************/
 .itemDone {
-  background: rgb(145, 176, 60);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* background: rgb(145, 176, 60); */
+  box-shadow: 0 8px 32px 5px rgba(161, 193, 81, 0.37);
+  border: 1px solid rgb(145, 176, 60);
 }
 
 .itemCard:hover .disableDoneButton {
-  background-color: beige !important;
-  color: black !important;
+  background-color: rgb(112, 112, 111) !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight: normal !important;
+
 }

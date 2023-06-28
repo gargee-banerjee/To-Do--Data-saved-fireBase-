@@ -11,10 +11,15 @@ const ItemComp = (props) => {
     dispatch(itemActions.completeItem({ itemId }));
   };
 
+  const removeItemHandler = () => {
+    dispatch(itemActions.removeItem({ itemId }));
+  }
+
   //conditional css classes
   const cardContainerStyle = isDone
     ? `${style.itemCard} ${style.itemDone}`
     : style.itemCard;
+    
   const itemDoneButtonStyle = isDone
     ? `${style.disableDoneButton}`
     : `${style.itemDoneButton}`;
@@ -31,7 +36,7 @@ const ItemComp = (props) => {
         >
           DONE
         </button>
-        <button className={style.itemDeleteButton}>DELETE</button>
+        <button className={style.itemDeleteButton} onClick={removeItemHandler}>DELETE</button>
       </div>
     </div>
   );
