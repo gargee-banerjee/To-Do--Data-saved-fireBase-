@@ -1,1 +1,2 @@
-# To-Do--Data-saved-fireBase-
+#A to do application, which saves its data  in firebase realtimr database.
+Functionality :: CRUD
