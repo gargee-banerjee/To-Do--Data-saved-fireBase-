@@ -1,0 +1,110 @@
+/* .itemContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem));
+  row-gap: 10rem;
+  padding: 10rem;
+} */
+
+.itemContainer {
+  padding: 10rem;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+/****************ITEMS**************/
+
+.itemCard {
+  height: 35rem;
+  width: 10rem;
+  position: relative;
+}
+
+.itemCard:hover {
+  background-color: #e0ff64;
+  color: beige !important;
+}
+
+.itemCard img {
+  width: 160px;
+  position: absolute;
+  bottom: 0;
+}
+
+.itemTitle {
+  position: absolute;
+  bottom: 40px;
+  width: 10rem;
+  background-color: rgba(26, 25, 25, 0.92);
+  box-shadow: 41px 10px 90px 92px #1a1919;
+  text-align: center;
+  font-size: 2rem;
+  color: #e0ff64;
+}
+
+.itemCard:hover .itemTitle {
+  color: beige;
+  font-weight: bold;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/***************Buttons**********************/
+.itemCardButtonContainer {
+  position: absolute;
+  bottom: -55px;
+  left: -22px;
+  display: flex;
+  justify-content: space-between;
+  width: 13rem;
+  margin-top: 1.5rem;
+}
+
+.itemCardButtonContainer button {
+  width: 5.8rem;
+  height: 2.5rem;
+
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+}
+
+.itemCard:hover .itemCardButtonContainer button {
+  color: rgb(7, 7, 7);
+  background-color: #ddf57c;
+  box-shadow: 4px 5px 6px 4px rgb(73, 74, 74) !important;
+}
+
+.itemCardButtonContainer button:hover {
+  background-color: #71c552 !important;
+  color: beige !important;
+  font-weight: bolder !important;
+}
+
+/* .itemDoneButton:hover + .itemDeleteButton{
+  background-color: aquamarine !important;
+} */
+
+.itemDeleteButton:active,
+.itemDoneButton:active {
+  box-shadow: none !important;
+  transform: translateY(7px) !important;
+}
+
+.itemDone {
+  background: rgb(145, 176, 60);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.itemCard:hover .disableDoneButton {
+  background-color: beige !important;
+  color: black !important;
+}

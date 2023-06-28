@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding:3rem;
+}
+
+.appTitle{
+   font-family: 'Righteous', cursive;
+   color: beige;
+   font-size: 1.5rem;
+}

@@ -1,0 +1,25 @@
+.inputFormContainer input {
+  width: 28rem;
+  height: 2.3rem;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid rgb(120, 118, 118);
+  background: transparent;
+  color: beige;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.inputFormContainer button {
+  width: 7.5rem;
+  height: 2.3rem;
+  margin-left: 0.3rem;
+  background: transparent;
+  border: 1px solid rgb(120, 118, 118);
+  border-radius: 50px;
+  outline: none;
+  color: beige;
+  font-size: 1.2rem;
+}
+
+
