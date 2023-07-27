@@ -1,5 +1,9 @@
-#A to do application, which saves its data  in firebase realtime database.
-Functionality :: CRUD
+# TO DO APP
+A to do application, which saves its data  in firebase realtime database.
+## Functionality 
+1)Add task.\
+2)Edit task.\
+3)Delete task
 
 Final Look
 
